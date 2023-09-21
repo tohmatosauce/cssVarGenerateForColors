@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+    
+    <div class="sticky">
+    <div class="urly">
+    <label for="link">Url for stylesheet:</label>
+    <input type="url" id="link" name="link" placeholder="stylesheet.css" value="style.css"/>
+    </div>
+    <div class="buttons">
+    <input type="button" onclick="cryingtmpointoh()" value="Stylesheet from URL">
+    <input type="button" onclick="cryingtm()" value="Stylesheet with CSS Variables">
+    </div>
+    </div>
+    
+    <div class="settingsetty">
+    <div id="switchytoggle">
+    <div class="sortstuff">
+        <label for="sort">Name variables in order. ⚠️ <span>Looks neater but will probably fuck up custom theme modes using CSS variables.</span></label>
+        <input type="checkbox" id="sort" name="sort"/>
+        <label for="sort" id="sortOFF">Sort OFF</label>
+        <label for="sort" id="sortON">Sort ON</label>
+    </div>
+    <div class="overridess">
+        <label for="ovver">Disable validation check ⚠️ <span>Who needs those silly validation checks!</span></label>
+        <input type="checkbox" id="ovver" name="ovver"/>
+        <label for="ovver" id="ovverOFF">Validation ON</label>
+        <label for="ovver" id="ovverON">Validation OFF</label>
+    </div>
+    </div>
+    <textarea id="css2"></textarea>
+    </div>
+    
+    <textarea id="css1"></textarea>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,204 @@
+body {
+    box-sizing: border-box;
+    background: linear-gradient(#d1b1c1, #e2cec8);
+    font-family: 'inter';
+    background-attachment: fixed;
+  }
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 35px;
+    gap: 12px;
+    background: rgba(221, 221, 221, 0.4);
+    box-shadow: 0 0 25px rgba(238, 238, 238, 0.1);
+    margin: 30px 50px;
+    border: 1px solid #c9a4b7;
+  }
+  label {
+    font-weight: 550;
+    font-style: italic;
+    color: #a4527c;
+  }
+  input,
+  textarea {
+    font-family: 'inter';
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 0;
+    padding: 7.5px 10px;
+    margin: 4px;
+    transition: 0.34s ease;
+    box-sizing: border-box;
+  }
+  input:hover,
+  textarea:hover {
+    background: #eaeaea;
+  }
+  .sticky {
+    position: sticky;
+    top: 0px;
+    width: calc(100% + 35px*2);
+    border-bottom: 1.5px dashed #a4527c;
+    padding-bottom: 6px;
+    margin: -35px -35px 0;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background: linear-gradient(5deg, #cdafbf, #e3d1cc);
+  }
+  .urly {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+  #link {
+    flex: 1;
+    line-height: 1;
+    border: 0.5px solid #e0b0c8;
+    background: rgba(255, 255, 255, 0.75);
+  }
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    height: 1rem;
+    width: 100%;
+    padding: 12.5px 50px;
+    background: #fff;
+    border-radius: 5px;
+    border: 3px solid #c9a4b7;
+    display: block;
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked {
+    background: #c094aa;
+    border: 3px solid #c9a4b7;
+  }
+  #css1,
+  #css2 {
+    white-space: pre;
+    overflow: auto;
+    padding: 15px;
+    background: #ebe7e7;
+    font-family: 'inter';
+    font-size: 0.9rem;
+    color: #484442;
+    font-weight: 500;
+    box-sizing: border-box;
+  }
+  #css1 {
+    flex: 1;
+    height: 80vh;
+  }
+  .settingsetty {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  #css2 {
+    white-space: pre-wrap;
+    min-width: min(100%,220px);
+    flex: 1;
+    min-height: 25vh;
+    background: none;
+    color: #a4527c;
+    font-weight: 480;
+    border: 1.5px dashed #be6d97;
+    background: rgba(235, 195, 216, 0.1);
+    margin: 0;
+    font-size: 0.83rem;
+  }
+  #switchytoggle {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,200px), 1fr));
+    border: 0.5px dashed #be6d97;
+    box-sizing: border-box;
+    background: rgba(190, 109, 151, 0.02);
+    text-align: center;
+  }
+  .sortstuff,
+  .overridess {
+    display: grid;
+    grid-template-areas: 'a' 'b';
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 7px;
+    flex: 1;
+    border: 0.5px dashed #be6d97;
+    padding: 12px 12.5px;
+  }
+  .sortstuff label:nth-of-type(1),
+  .overridess label:nth-of-type(1) {
+    grid-area: a;
+  }
+  .sortstuff label:nth-of-type(1) span,
+  .overridess label:nth-of-type(1) span {
+    font-size: 0.72rem;
+    display: block;
+    width: 85%;
+  }
+  #sort,
+  #ovver {
+    grid-area: b;
+    width: 80%;
+  }
+  #sortOFF,
+  #ovverOFF,
+  #sortON,
+  #ovverON {
+    opacity: 0;
+    grid-area: b;
+    font-size: 0.7rem;
+    transition: 0.25s ease;
+    cursor: pointer;
+  }
+  #sortOFF,
+  #ovverOFF {
+    opacity: 1;
+    transition: 0.25s ease 0.25s;
+  }
+  #sort:checked ~ #sortON,
+  #sort:checked ~ #ovverON,
+  #ovver:checked ~ #sortON,
+  #ovver:checked ~ #ovverON {
+    opacity: 1;
+    transition: 0.25s ease 0.25s;
+  }
+  #sort:checked ~ #sortOFF,
+  #sort:checked ~ #ovverOFF,
+  #ovver:checked ~ #sortOFF,
+  #ovver:checked ~ #ovverOFF {
+    opacity: 0;
+  }
+  .buttons {
+    display: flex;
+  }
+  input[type="button"] {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.65);
+    width: 100%;
+    margin-top: 12px;
+    cursor: pointer;
+    padding: 12px;
+    border: 1.5px solid #be6d97;
+    color: #ac5883;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  input[type="button"]:nth-of-type(2) {
+    flex: 2;
+  }
+  #testing123 {
+    color: #ffffff;
+    color: rgba(0, 0, 0);
+    color: hsla(29, 50%, 20%, 0.5);
+    color: hsla(15, 35%, 20%, 0.5);
+    color: hsla(29, 90%, 6%, 0.5);
+    color: hsla(29 90% 6% / 0.5);
+  }
